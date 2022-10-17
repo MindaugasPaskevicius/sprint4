@@ -1,0 +1,23 @@
+{
+    "name": "mindaugas/sprint4",
+    "description": "My project",
+    "type": "project",
+    "authors": [
+        {
+            "name": "MindaugasPaskevicius",
+            "email": "106962850+MindaugasPaskevicius@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "doctrine/orm": "^2.13",
+        "symfony/cache": "^6.1",
+        "doctrine/annotations": "^1.13"
+    },
+    "autoload": {
+        "files": [
+          "src/models/Page.php",
+          "src/models/User.php"
+        ]
+      }
+    
+}
