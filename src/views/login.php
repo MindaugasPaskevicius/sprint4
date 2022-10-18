@@ -43,12 +43,12 @@ if ($rootUrl === "logout") {
 // Login form
 
 if (!isset($_SESSION['valid'])) {
-    print('<div class="container mt-5 pt-5 form-signin"><div class="container">');
+    print('<div class="container mt-5 pt-5 form-signin"><div class="container" style="width:500px">');
     print('<form class="form-signin" action="" method="post">');           
     print('<h4 class="form-signin-heading">' . $msg . '</h4>');         // $msg = 'Wrong password or username';
     print('<input type="text" class="form-control" name="username" placeholder="Username" required></br>');
     print('<input type="password" class="form-control mb-5" name="password" placeholder="Password" required>');
-    print('<button class="btn btn btn-warning btn-lg mt-2 btn-block" name="login">Login</button></form>');
+    print('<button class="btn btn-lg mt-2 btn-block" style="background-color:#f4c943;" name="login">Login</button></form>');
     print('</div>');
 } else {
     echo '<h2 class="display-6 mt-5 pt-5 text-secondary text-center">

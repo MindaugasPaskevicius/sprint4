@@ -18,7 +18,7 @@ if (isset($_SESSION['valid'])) {
                     <textarea class="form-control" name="content" required style="height: 150px"></textarea>
                 </div>
                 <div class="mb-4">
-                    <button class="btn btn-warning rounded-pill">Add New Page</button>
+                    <button class="btn rounded-pill text-white" style="background-color:#f4c943;">Add New Page</button>
                 </div>
             </form>
         </div>

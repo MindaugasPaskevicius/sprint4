@@ -36,7 +36,7 @@ if (isset($_SESSION['valid'])) {
     }
 
     echo '
-        <button class="btn btn-warning rounded-pill mb-5">
+        <button class="btn rounded-pill mb-5" style="background-color:#f4c943;">
             <a class="text-white" href="new_page">Add Page</a>
          </button>
     ';
@@ -52,7 +52,7 @@ if (isset($_SESSION['valid'])) {
                 echo '<tr class="text-center table-light"><th scope="row"><p style="font-size: 18px"> '
                     . $title . '</p><td></td><td class="text-center"><form action="update" 
                 method="POST"> <input type="hidden" name="id" value="'
-                    . $id . '"><button class="btn btn-warning rounded-pill">Update Page
+                    . $id . '"><button class="btn rounded-pill text-white" style="background-color:#f4c943;">Update Page
                 </a></form></td></tr>';
             } else {
                 echo ' <tr class="table-light text-center"><th scope="row"><p style="font-size: 18px"> '
@@ -60,10 +60,10 @@ if (isset($_SESSION['valid'])) {
                 method="POST"><input type="hidden" name="id" value="'
                     . $id . '"><input type="hidden" name="title" value='
                     . $title . '><input type="hidden" name="delete" 
-                value="y"><button class="btn btn-warning rounded-pill">Delete Page
+                value="y"><button class="btn rounded-pill text-white" style="background-color:#f4c943;">Delete Page
                 </button></form></td><td class="text-center"><form action="update" method="POST">
                 <input type="hidden" name="id" value="' . $id . '">
-                <button class="btn btn-warning rounded-pill">Update Page</a>
+                <button class="btn rounded-pill text-white" style="background-color:#f4c943;">Update Page</a>
                 </form></td></tr>';
             }
         }

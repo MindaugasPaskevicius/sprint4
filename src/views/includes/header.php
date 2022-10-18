@@ -8,7 +8,7 @@ $pages = $entityManager->getRepository('Page')->findAll();
 ?>
 
 <header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:rgb(227, 214, 190);">
     <a class="navbar-brand me-4">Content management system</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
