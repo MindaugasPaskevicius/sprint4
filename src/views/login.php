@@ -2,7 +2,8 @@
 session_start();
 require 'includes/header.php';
 
-// login
+// Login logic
+
 $msg = '';
 
 if (
@@ -28,7 +29,8 @@ if (
     }
 }
 
-//logout
+// Logout logic
+
 if ($rootUrl === "logout") {
     unset($_SESSION['valid']);
     unset($_SESSION['username']);
@@ -38,7 +40,8 @@ if ($rootUrl === "logout") {
     exit();
 }
 
-#LOGIN FORM
+// Login form
+
 if (!isset($_SESSION['valid'])) {
     print('<div class="container mt-5 pt-5 form-signin"><div class="container">');
     print('<form class="form-signin" action="" method="post">');           

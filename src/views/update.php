@@ -18,7 +18,7 @@ if (isset($_SESSION['valid'])) {
                     <textarea class="form-control" name="content" 
                     required style="height: 150px">' . $page->getContent() . '</textarea>
                 </div> <div class="mb-4">
-                    <button class="btn btn-warning">Update Page</button>
+                    <button class="btn btn-warning rounded-pill">Update Page</button>
                 </div>
             </form>
             </div>
